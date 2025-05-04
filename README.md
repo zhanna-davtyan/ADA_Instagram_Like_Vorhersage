@@ -43,9 +43,9 @@ Um das Projekt lokal auszuführen, folgen Sie bitte diesen Schritten:
 
 3.  **Virtuelle Umgebung erstellen:**
     ```bash
-    python -m venv .venv
+    python3 -m venv .venv
     ```
-    *(Oder `python3` statt `python`, je nach Systemkonfiguration)*
+    *(Oder `python` statt `python3`, je nach Systemkonfiguration)*
 4.  **Umgebung aktivieren:**
     * macOS/Linux: `source .venv/bin/activate`
     * Windows: `.\.venv\Scripts\activate`
@@ -54,9 +54,12 @@ Um das Projekt lokal auszuführen, folgen Sie bitte diesen Schritten:
     pip install -r requirements.txt
     ```
 6.  **Kaggle API Key einrichten:** Für den automatischen Datendownload ist ein Kaggle API Key **erforderlich**.
-    * Laden Sie Ihre `kaggle.json`-Datei von Ihrem Kaggle-Account herunter ([Anleitung](https://www.kaggle.com/docs/api#authentication)).
-    * Erstellen Sie den Ordner `~/.kaggle/` (falls nicht vorhanden).
-    * Platzieren Sie die `kaggle.json`-Datei in diesem Ordner. Stellen Sie sicher, dass die Berechtigungen korrekt gesetzt sind (oft `chmod 600 ~/.kaggle/kaggle.json`).
+
+- Gehen Sie zu Kaggle und melden Sie sich an.
+- Klicken Sie auf Ihr Profilbild in der oberen rechten Ecke und wählen Sie "Settings".
+- Scrollen Sie nach unten zu "API" und klicken Sie auf "Create New API Token". Es wird eine Datei namens kaggle.json heruntergeladen.
+- Erstellen Sie einen Ordner namens .kaggle in Ihrem Home-Verzeichnis (z.B. ~/.kaggle/).
+- Verschieben Sie die heruntergeladene kaggle.json-Datei in diesen Ordner.
 
 ## Datenbeschaffung
 
