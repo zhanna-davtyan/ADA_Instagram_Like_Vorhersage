@@ -11,12 +11,9 @@ Dieses Repository enthält das Gruppenprojekt für das Modul "Angewandte Daten-A
 
 ## Zielsetzung
 
-Im Social Media Marketing ist die Vorhersage des potenziellen Erfolgs von Inhalten eine Herausforderung. Dieses Projekt zielt darauf ab:
+Die Popularität von Social-Media-Inhalten, insbesondere auf Plattformen wie Instagram, wird häufig an der Anzahl der erhaltenen „Likes“ gemessen. Diese Kennzahl ist nicht nur für Influencer und Marken von Bedeutung, sondern auch für das Verständnis von Trends und Nutzerinteraktionen im digitalen Raum. Ziel dieses Projekts ist die Entwicklung eines Prognosesystems zur Vorhersage der Like-Anzahl von Instagram-Posts. Hierfür wird ein Datensatz analysiert, der sowohl Metadaten der Posts (z.B. Follower-Anzahl des Posters, Zeitpunkt des Posts, Art des Inhalts, Caption-Merkmale wie Länge, Hashtag- und Erwähnungsanzahl) als auch die zugehörigen Bilddaten umfasst. 
 
-1.  Einen Datensatz von Instagram-Posts (Bilder + Metadaten inkl. Likes) zu analysieren.
-2.  Relevante visuelle Merkmale (Farben, Helligkeit, Objekte etc.) und Metadaten-Features zu extrahieren.
-3.  Ein Machine-Learning-Modell zu entwickeln, das die Like-Anzahl basierend auf diesen Merkmalen prognostiziert.
-4.  Die Ergebnisse zu evaluieren und zu interpretieren, insbesondere den Einfluss visueller Faktoren (z.B. mittels Farb-Analyse / "Heatmap").
+Die Untersuchung verfolgt einen zweistufigen Ansatz. Zunächst wird eine explorative Datenanalyse (EDA) der Metadaten durchgeführt, um relevante Merkmale zu identifizieren, Hypothesen über deren Einfluss auf die Like-Anzahl zu testen und die Daten für die Modellierung aufzubereiten. Parallel dazu werden die Bilddaten analysiert, wobei der Fokus auf der Extraktion visueller Merkmale mittels eines vortrainierten Convolutional Neural Network (CNN) liegt. Dieser Ansatz des Transfer Learnings ermöglicht es, komplexe visuelle Muster zu erfassen, die manuell nur schwer zu quantifizieren wären. 
 
 ## Datensatz
 

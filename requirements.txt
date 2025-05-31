@@ -7,4 +7,5 @@ opencv-python
 Pillow
 scikit-learn
 jupyterlab
-
+statsmodels
+TensorFlow
