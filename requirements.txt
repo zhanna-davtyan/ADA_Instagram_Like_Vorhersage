@@ -8,4 +8,4 @@ Pillow
 scikit-learn
 jupyterlab
 statsmodels
-TensorFlow
+tensorflow
