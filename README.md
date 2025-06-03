@@ -65,3 +65,7 @@ Um das Projekt lokal auszuführen, folgen Sie bitte diesen Schritten:
 * **Falls die Daten fehlen:** Der Code versucht, den Datensatz über `kaggle` herunterzuladen und in den Zielordner zu kopieren. Hierfür ist der eingerichtete Kaggle API Key notwendig.
 * Dieser Vorgang stellt sicher, dass Sie den Datensatz nicht manuell herunterladen müssen, die Daten aber für die Ausführung lokal verfügbar sind.
 
+## Arbeitsverzeichnis
+
+In den Notebooks wird automatisch eine Pfadanpassung vorgenommen, um sicherzustellen, dass alle relativen Pfade korrekt funktionieren: Das aktuelle Arbeitsverzeichnis wird auf den Projektordner `ADA_Instagram_Like_Vorhersage` gesetzt, unabhängig davon, ob das Notebook aus dem `notebooks`-Unterordner oder direkt aus dem Hauptprojektverzeichnis gestartet wird.
+
