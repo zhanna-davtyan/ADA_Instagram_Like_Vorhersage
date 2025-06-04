@@ -3,8 +3,6 @@ numpy
 kaggle
 matplotlib
 seaborn
-opencv-python
-Pillow
 scikit-learn
 jupyterlab
 statsmodels
