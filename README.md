@@ -1,33 +1,24 @@
 # Projekt: Instagram Like-Vorhersage mittels Bildanalyse (ADA)
 
 Dieses Repository enthält das Gruppenprojekt für das Modul "Angewandte Daten-Analyse (ADA)". Ziel des Projekts ist die Entwicklung eines Modells zur Vorhersage des Engagements (speziell der Like-Anzahl) von Instagram-Posts basierend auf visuellen Merkmalen der Bilder und zugehörigen Metadaten.
+Ziel dieses Projekts ist die Entwicklung eines Prognosesystems zur Vorhersage der Like-Anzahl von Instagram-Posts. Hierfür wird ein Datensatz analysiert, der sowohl Metadaten der Posts als auch die zugehörigen Bilddaten umfasst. 
 
 ## Team
-
 * Zhanna Davtyan
 * Laura Remmert
 * Quentin Alpmann
 
-
-## Zielsetzung
-
-Die Popularität von Social-Media-Inhalten, insbesondere auf Plattformen wie Instagram, wird häufig an der Anzahl der erhaltenen „Likes“ gemessen. Diese Kennzahl ist nicht nur für Influencer und Marken von Bedeutung, sondern auch für das Verständnis von Trends und Nutzerinteraktionen im digitalen Raum. Ziel dieses Projekts ist die Entwicklung eines Prognosesystems zur Vorhersage der Like-Anzahl von Instagram-Posts. Hierfür wird ein Datensatz analysiert, der sowohl Metadaten der Posts (z.B. Follower-Anzahl des Posters, Zeitpunkt des Posts, Art des Inhalts, Caption-Merkmale wie Länge, Hashtag- und Erwähnungsanzahl) als auch die zugehörigen Bilddaten umfasst. 
-
-Die Untersuchung verfolgt einen zweistufigen Ansatz. Zunächst wird eine explorative Datenanalyse (EDA) der Metadaten durchgeführt, um relevante Merkmale zu identifizieren, Hypothesen über deren Einfluss auf die Like-Anzahl zu testen und die Daten für die Modellierung aufzubereiten. Parallel dazu werden die Bilddaten analysiert, wobei der Fokus auf der Extraktion visueller Merkmale mittels eines vortrainierten Convolutional Neural Network (CNN) liegt. Dieser Ansatz des Transfer Learnings ermöglicht es, komplexe visuelle Muster zu erfassen, die manuell nur schwer zu quantifizieren wären. 
-
 ## Datensatz
-
 * **Quelle:** Kaggle
 * **Name:** Instagram posts dataset
 * **ID:** `thecoderenroute/instagram-posts-dataset`
 * **Link:** [https://www.kaggle.com/datasets/thecoderenroute/instagram-posts-dataset](https://www.kaggle.com/datasets/thecoderenroute/instagram-posts-dataset)
-* **Inhalt:** Über 5.000 Bilder aus ca. 2.000 Posts, jeweils mit zugehörigen Metadaten (Likes, Kommentare, Zeitstempel etc.) im JSON-Format und Bildunterschriften als Textdatei.
+* **Inhalt:** Über 5.000 Bilder aus ca. 2.000 Posts, jeweils mit zugehörigen Metadaten im JSON-Format.
 * **Größe:** ca. 1.82 GB
 
-*Hinweis:* Der Datensatz wird **nicht** direkt mit diesem Repository ausgeliefert, sondern bei Bedarf automatisch heruntergeladen (siehe Abschnitt Datenbeschaffung).
+*Hinweis:* Der Datensatz wird **nicht** direkt mit diesem Repository ausgeliefert, sondern bei Bedarf automatisch heruntergeladen.
 
 ## Setup-Anleitung
-
 Um das Projekt lokal auszuführen, folgen Sie bitte diesen Schritten:
 
 1.  **Repository klonen:**
@@ -46,12 +37,12 @@ Um das Projekt lokal auszuführen, folgen Sie bitte diesen Schritten:
 4.  **Umgebung aktivieren:**
     * macOS/Linux: `source .venv/bin/activate`
     * Windows: `.\.venv\Scripts\activate`
+
 5.  **Bibliotheken installieren:** Alle benötigten Pakete sind in `requirements.txt` aufgelistet.
     ```bash
     pip install -r requirements.txt
     ```
 6.  **Kaggle API Key einrichten:** Für den automatischen Datendownload ist ein Kaggle API Key **erforderlich**.
-
 - Gehen Sie zu Kaggle und melden Sie sich an.
 - Klicken Sie auf Ihr Profilbild in der oberen rechten Ecke und wählen Sie "Settings".
 - Scrollen Sie nach unten zu "API" und klicken Sie auf "Create New API Token". Es wird eine Datei namens kaggle.json heruntergeladen.
@@ -59,13 +50,11 @@ Um das Projekt lokal auszuführen, folgen Sie bitte diesen Schritten:
 - Verschieben Sie die heruntergeladene kaggle.json-Datei in diesen Ordner.
 
 ## Datenbeschaffung
-
 * Der benötigte Kaggle-Datensatz (ca. 1.82 GB) ist **nicht** Teil dieses Git-Repositories.
 * Das erste Jupyter Notebook (z.B. `notebooks/01_Daten_Laden_Exploration.ipynb`) enthält am Anfang Code-Zellen, die **automatisch prüfen**, ob der Datensatz im Verzeichnis `daten/rohdaten/instagram-posts-dataset/` vorhanden ist.
 * **Falls die Daten fehlen:** Der Code versucht, den Datensatz über `kaggle` herunterzuladen und in den Zielordner zu kopieren. Hierfür ist der eingerichtete Kaggle API Key notwendig.
 * Dieser Vorgang stellt sicher, dass Sie den Datensatz nicht manuell herunterladen müssen, die Daten aber für die Ausführung lokal verfügbar sind.
 
 ## Arbeitsverzeichnis
-
 In den Notebooks wird automatisch eine Pfadanpassung vorgenommen, um sicherzustellen, dass alle relativen Pfade korrekt funktionieren: Das aktuelle Arbeitsverzeichnis wird auf den Projektordner `ADA_Instagram_Like_Vorhersage` gesetzt, unabhängig davon, ob das Notebook aus dem `notebooks`-Unterordner oder direkt aus dem Hauptprojektverzeichnis gestartet wird.
 
