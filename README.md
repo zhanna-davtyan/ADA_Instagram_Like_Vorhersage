@@ -1,5 +1,7 @@
 # Projekt: Instagram Like-Vorhersage mittels Bildanalyse (ADA)
 
+Author: "Quentin Alpmann"
+
 Dieses Repository enthält das Gruppenprojekt für das Modul "Angewandte Daten-Analyse (ADA)". Ziel des Projekts ist die Entwicklung eines Modells zur Vorhersage des Engagements (speziell der Like-Anzahl) von Instagram-Posts basierend auf visuellen Merkmalen der Bilder und zugehörigen Metadaten.
 Ziel dieses Projekts ist die Entwicklung eines Prognosesystems zur Vorhersage der Like-Anzahl von Instagram-Posts. Hierfür wird ein Datensatz analysiert, der sowohl Metadaten der Posts als auch die zugehörigen Bilddaten umfasst. 
 
